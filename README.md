@@ -25,17 +25,11 @@ module.exports = {
 }
 ```
 
-### Edit `eslintrc.cjs` if you're using TypeScript
+### Edit `eslintrc.json` if you're still using JavaScript
 
-```javascript
-module.exports = {
-    extends: ["the-only-perfect"],
-    parserOptions: {
-        tsconfigRootDir: __dirname,
-        project: ["./tsconfig.json"],
-        sourceType: "module",
-        ecmaVersion: 2021,
-    }
+```json
+{
+    "extends": ["the-only-perfect"]
 }
 ```
 
