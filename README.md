@@ -8,32 +8,22 @@ Forget about eslint-configs hell. All you need is here. One package, one config,
 ### Install
 
 ```shell
-yarn add -D eslint@8.57.x eslint-config-the-only-perfect
+yarn add -D eslint@9 eslint-config-the-only-perfect
 ```
 
-### Edit `.eslintrc.cjs` if you're using TypeScript
+### Edit `eslint.config.js`
 
 ```javascript
-module.exports = {
-    extends: ["the-only-perfect"],
-    parserOptions: {
-        tsconfigRootDir: __dirname,
-        project: ["./tsconfig.json"],
-        sourceType: "module",
-        ecmaVersion: 2021,
-    }
-}
-```
+import config from "eslint-config-the-only-perfect";
 
-### Edit `eslintrc.json` if you're still using JavaScript
-
-```json
-{
-    "extends": ["the-only-perfect"]
-}
+export default config;
 ```
 
 ### Done
+
+## Looking for eslint@8?
+
+[eslint-config-the-only-perfect@1.3](https://github.com/dmitrytarassov/eslint-config-the-only-perfect/tree/v1.3.8)
 
 ### Ok, what is inside?
 
